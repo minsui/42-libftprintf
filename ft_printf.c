@@ -6,7 +6,7 @@
 /*   By: mkim2 <mkim2@student.42gyeongsan.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 15:21:47 by mkim2             #+#    #+#             */
-/*   Updated: 2026/01/14 15:23:56 by mkim2            ###   ########.fr       */
+/*   Updated: 2026/01/20 14:50:30 by mkim2            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	ft_printf(const char *format, ...)
 	int		i;
 	int		total_len;
 
+	if (format == NULL)
+		return (-1);
 	i = 0;
 	total_len = 0;
 	va_start(ap, format);
